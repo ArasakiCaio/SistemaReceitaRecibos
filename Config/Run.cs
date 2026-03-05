@@ -12,6 +12,6 @@ public class Run
         await using var conn = new NpgsqlConnection(connectionString);
         await conn.OpenAsync();
 
-        Console.WriteLine($"The PostgreSQL version: {conn.PostgreSqlVersion}");
+        Console.WriteLine($"Conectado com sucesso! PostgreSQL version {conn.PostgreSqlVersion}");
     }
 }
